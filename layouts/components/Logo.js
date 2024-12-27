@@ -16,7 +16,7 @@ const Logo = ({ src }) => {
         width: logo_width.replace("px", "") + "px",
       }}
     >
-      {src || logo ? (
+      {/* {src || logo ? (
         <Image
           width={logo_width.replace("px", "") * 2}
           height={logo_height.replace("px", "") * 2}
@@ -27,8 +27,8 @@ const Logo = ({ src }) => {
       ) : logo_text ? (
         logo_text
       ) : (
-        title
-      )}
+      )} */}
+      Bayvue Corp
     </Link>
   );
 };
