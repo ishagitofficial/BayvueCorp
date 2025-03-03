@@ -22,69 +22,58 @@ export const metadata: Metadata = {
 
 const AboutUsPage = () => {
   return (
-    <Wrapper>
-      <div className="main-page-wrapper">
-        {/* header start */}
-        <HeaderTwo />
-        {/* header end */}
-        <main>
-          {/* breadcrumb start */}
-          <BreadcrumbOne
-            title="We’r top rated company"
-            subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
-            page="About Us"
-            bg_img={about_bg}
-            shape={shape}
-            style_2={true}
-          />
-          {/* breadcrumb end */}
+    <main>
+      {/* breadcrumb start */}
+      <BreadcrumbOne
+        title="We’r top rated company"
+        subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
+        page="About Us"
+        bg_img={about_bg}
+        shape={shape}
+        style_2={true}
+      />
+      {/* breadcrumb end */}
 
-          {/* text feature one area start */}
-          <TextFeatureOne style_2={true} />
-          {/* text feature one area end */}
+      {/* text feature one area start */}
+      <TextFeatureOne style_2={true} />
+      {/* text feature one area end */}
 
-          {/* block feature one area start */}
-          <BlockFeatureOne style_2={true} />
-          {/* block feature one area end */}
+      {/* block feature one area start */}
+      <BlockFeatureOne style_2={true} />
+      {/* block feature one area end */}
 
-          {/* text feature one area start */}
-          <TextFeatureThree style_2={true} />
-          {/* text feature one area end */}
+      {/* text feature one area start */}
+      <TextFeatureThree style_2={true} />
+      {/* text feature one area end */}
 
-          {/* feedback one start */}
-          <FeedbackOne cls="top-border pt-80 pb-80" />
-          {/* feedback one end */}
+      {/* feedback one start */}
+      <FeedbackOne cls="top-border pt-80 pb-80" />
+      {/* feedback one end */}
 
-          {/* partner logo start */}
-          <div className="partner-logo-one pt-80 lg-pt-40 pb-80 lg-pb-40">
-            <div className="container">
-              <PartnersSliderOne />
-            </div>
-          </div>
-          {/* partner logo end */}
-
-          {/* team three start */}
-          <TeamSectionThree />
-          {/* team three end */}
-
-          {/* blogs start */}
-          <HomeFourBlogs cls="mt-180 lg-mt-80 mb-180 lg-mb-80" />
-          {/* blogs end */}
-
-          {/* fancy banner three start */}
-          <FancyBannerThree />
-          {/* fancy banner three end */}
-
-          {/* news letter start */}
-          <NewsletterBanner />
-          {/* news letter end */}
-        </main>
-
-        {/* footer start */}
-        <FooterThree style_2={true} />
-        {/* footer end */}
+      {/* partner logo start */}
+      <div className="partner-logo-one pt-80 lg-pt-40 pb-80 lg-pb-40">
+        <div className="container">
+          <PartnersSliderOne />
+        </div>
       </div>
-    </Wrapper>
+      {/* partner logo end */}
+
+      {/* team three start */}
+      <TeamSectionThree />
+      {/* team three end */}
+
+      {/* blogs start */}
+      <HomeFourBlogs cls="mt-180 lg-mt-80 mb-180 lg-mb-80" />
+      {/* blogs end */}
+
+      {/* fancy banner three start */}
+      <FancyBannerThree />
+      {/* fancy banner three end */}
+
+      {/* news letter start */}
+      <NewsletterBanner />
+      {/* news letter end */}
+    </main>
   );
 };
 

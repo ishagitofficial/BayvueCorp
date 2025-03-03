@@ -2,16 +2,16 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 // internal
-import screen_1 from '@/assets/images/assets/screen_22.svg';
-import screen_2 from '@/assets/images/assets/screen_23.png';
-import shape_1 from '@/assets/images/shape/shape_43.svg';
-import shape_2 from '@/assets/images/shape/shape_42.svg';
+import screen_1 from "@/assets/images/assets/screen_22.svg";
+import screen_2 from "@/assets/images/assets/screen_23.png";
+import shape_1 from "@/assets/images/shape/shape_43.svg";
+import shape_2 from "@/assets/images/shape/shape_42.svg";
 import PartnersSliderOne from "../partners/partners-slider-one";
 
-// img style 
+// img style
 const imgStyle = {
-  height:'auto'
-}
+  height: "auto",
+};
 
 const HeroBannerSix = () => {
   return (
@@ -21,14 +21,15 @@ const HeroBannerSix = () => {
           <div className="col-md-6 wow fadeInLeft">
             <div className="pt-20 pb-50">
               <h1 className="hero-heading fw-bold">
-                Delivers more, not just marketing.
+                The right talent for your business success.
               </h1>
               <p className="text-lg pt-35 lg-pt-30 pb-35 lg-pb-20">
-                Unlock your business growth potential with a marketing agency
-                expertise.
+                Unlock your business growth potential with expert-driven hiring
+                solutions and operational excellence.
               </p>
               <div className="d-flex flex-wrap">
-                <Link href="/contact"
+                <Link
+                  href="/contact"
                   className="btn-eighteen tran3s me-4 mt-10"
                 >
                   Contact
