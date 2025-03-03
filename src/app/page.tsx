@@ -1,65 +1,71 @@
+import { Metadata } from "next";
 import Wrapper from "@/layout/wrapper";
-import HeaderOne from "@/layout/header/header-one";
-import HeroBannerOne from "@/components/hero-banner/hero-banner-one";
-import TextFeatureTwo from "@/components/text-feature/text-feature-two";
-import BlockFeatureFour from "@/components/block-feature/block-feature-four";
-import TextFeatureThree from "@/components/text-feature/text-feature-three";
-import BlockFeatureFive from "@/components/block-feature/block-feature-five";
-import FeedbackTwo from "@/components/feedback/feedback-two";
-import FaqSectionTwo from "@/components/faq/faq-section-two";
-import HomeBlogs from "@/components/blogs/home-blogs";
+import HeaderSix from "@/layout/header/header-six";
+import HeroBannerSix from "@/components/hero-banner/hero-banner-six";
+import BlockFeatureEleven from "@/components/block-feature/block-feature-eleven";
+import BlockFeatureTwelve from "@/components/block-feature/block-feature-twelve";
+import PortfolioTwo from "@/components/portfolio/portfolio-two";
+import TextFeatureEight from "@/components/text-feature/text-feature-eight";
+import FancyBannerFive from "@/components/fancy-banner/fancy-banner-five";
+import FeedbackSix from "@/components/feedback/feedback-six";
+import TeamSectionThree from "@/components/team/team-section-three";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import FooterTwo from "@/layout/footer/footer-two";
+import FooterThree from "@/layout/footer/footer-three";
+import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 
 export default function HomePage() {
   return (
     <Wrapper>
       <div className="main-page-wrapper">
         {/* header start */}
-        <HeaderOne />
+        <HeaderSix />
         {/* header end */}
         <main>
           {/* hero banner start */}
-          <HeroBannerOne />
+          <HeroBannerSix />
           {/* hero banner end */}
 
-          {/* text feature start */}
-          <TextFeatureTwo />
-          {/* text feature end */}
+          {/* block feature eleven start */}
+          <BlockFeatureEleven />
+          {/* block feature eleven end */}
 
-          {/* block feature four start */}
-          <BlockFeatureFour />
-          {/* block feature four end */}
+          {/* block feature twelve start */}
+          <BlockFeatureTwelve />
+          {/* block feature twelve end */}
 
-          {/* text feature start */}
-          <TextFeatureThree />
-          {/* text feature end */}
+          {/* portfolio two start */}
+          <PortfolioTwo />
+          {/* portfolio two end */}
 
-          {/* block feature five start */}
-          <BlockFeatureFive />
-          {/* block feature five end */}
+          {/* text feature eight start */}
+          <TextFeatureEight style_2={true} />
+          {/* text feature eight end */}
 
-          {/* feedback two start */}
-          <FeedbackTwo/>
-          {/* feedback two end */}
+          {/* fancy banner five start */}
+          <FancyBannerFive style_3={true} />
+          {/* fancy banner five end */}
 
-          {/* project faq area start */}
-          <FaqSectionTwo/>
-          {/* project faq area end */}
+          {/* feedback six start */}
+          <FeedbackSix />
+          {/* feedback six end */}
 
-          {/* blog item start */}
-          <HomeBlogs/>
-          {/* blog item end */}
+          {/* team section start */}
+          <TeamSectionThree style_2={true} />
+          {/* team section end */}
 
           {/* fancy banner three start */}
-          <FancyBannerThree/>
+          <FancyBannerThree />
           {/* fancy banner three end */}
-        </main>
 
-        {/* footer start */}
-        <FooterTwo/>
-        {/* footer end */}
+          {/* newsletter banner start */}
+          <NewsletterBanner style_2={true} />
+          {/* newsletter banner end */}
+        </main>
       </div>
+      {/* footer start */}
+      <FooterThree />
+      {/* footer end */}
     </Wrapper>
   );
 }
