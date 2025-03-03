@@ -36,25 +36,18 @@ const ContactArea = () => {
           <div className="row">
             <div className="col-12 m-auto">
               <div className="row">
-                <div className="col-md-4">
+                <div className="col-md-6">
                   <AddressBlock
                     icon={icon_1}
                     title="Our Address"
-                    subtitle="1012 Pebda Parkway, Mirpur 2 <br/>Dhaka, Bangladesh"
+                    subtitle="Thane, <br/>Mumbai, India"
                   />
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-6">
                   <AddressBlock
                     icon={icon_2}
                     title="Contact Info"
-                    subtitle='Open a chat or give us call at <br/><a href="tel:310.841.5500" className="call text-lg fw-500">310.841.5500</a>'
-                  />
-                </div>
-                <div className="col-md-4">
-                  <AddressBlock
-                    icon={icon_3}
-                    title="Live Support"
-                    subtitle='live chat service <br/><a href="#" className="webaddress">www.babunlivechat.com</a>'
+                    subtitle='Open a chat or give us call at <br/><a href="tel:800-800-8000" className="call text-lg fw-500">+91-800-800-8000</a>'
                   />
                 </div>
               </div>
@@ -94,7 +87,8 @@ const ContactArea = () => {
         <div className="gmap_canvas h-100 w-100">
           <iframe
             className="gmap_iframe h-100 w-100"
-            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=dhaka collage&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15073.649826930929!2d72.96520033615933!3d19.177179279857445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8db87dc0033%3A0xf315b33e45611bb0!2sThane%20East%2C%20Thane%2C%20Maharashtra%20400603!5e0!3m2!1sen!2sin!4v1741020838470!5m2!1sen!2sin"
+            loading="lazy"
           ></iframe>
         </div>
       </div>
