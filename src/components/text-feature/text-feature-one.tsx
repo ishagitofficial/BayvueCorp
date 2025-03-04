@@ -78,7 +78,7 @@ const TextFeatureOne = () => {
                   With a deep understanding of industry trends, technology, and
                   workforce dynamics, we streamline the hiring process, ensuring
                   fast, cost-effective, and high-quality placements. Whether
-                  you're looking for top professionals in IT, healthcare,
+                  youre looking for top professionals in IT, healthcare,
                   finance, or executive roles, we deliver talent that fuels
                   business growth.
                 </p>
