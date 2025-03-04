@@ -29,12 +29,12 @@ const HeroBannerSix = () => {
               </p>
               <div className="d-flex flex-wrap">
                 <Link
-                  href="/contact"
+                  href="/contact-us"
                   className="btn-eighteen tran3s me-4 mt-10"
                 >
                   Contact
                 </Link>
-                <Link href="/contact" className="btn-nineteen tran3s mt-10">
+                <Link href="/contact-us" className="btn-nineteen tran3s mt-10">
                   Let’s Get Started
                 </Link>
               </div>
@@ -42,12 +42,6 @@ const HeroBannerSix = () => {
           </div>
           <div className="col-md-6 d-md-flex justify-content-end wow fadeInRight">
             <div className="media-wrapper position-relative ms-lg-5">
-              <Image
-                src={screen_1}
-                alt="screen"
-                className="lazy-img shapes screen_01"
-                style={imgStyle}
-              />
               <Image
                 src={screen_2}
                 alt="screen"
