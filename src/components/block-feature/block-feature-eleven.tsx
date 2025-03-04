@@ -48,7 +48,7 @@ const BlockFeatureEleven = () => {
               Marketing agency with top talented people are providing quality
               services.
             </p>
-            <Link href="/contact" className="btn-eighteen tran3s">
+            <Link href="/services" className="btn-eighteen tran3s">
               Explore All
             </Link>
           </div>

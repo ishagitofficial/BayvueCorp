@@ -35,7 +35,7 @@ const AboutUsPage = () => {
       {/* breadcrumb end */}
 
       {/* text feature one area start */}
-      <TextFeatureOne style_2={true} />
+      <TextFeatureOne />
       {/* text feature one area end */}
 
       {/* block feature one area start */}

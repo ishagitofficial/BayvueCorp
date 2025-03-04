@@ -168,14 +168,14 @@ const service_data: IService[] = [
     id: 19,
     icon: icon_17,
     title: "Our Mission",
-    desc: "To be the trusted global partner for businesses seeking exceptional talent and operational excellence, driving sustainable growth through innovative hiring solutions and structured PMO processes.",
+    desc: "Our mission is to empower businesses with exceptional talent and optimized operations through strategic hiring solutions and scalable PMO frameworks.",
     page: "home-5",
   },
   {
     id: 20,
     icon: icon_18,
     title: "Our Vision",
-    desc: "Our mission is to empower businesses with exceptional talent and optimized operations through strategic hiring solutions and scalable PMO frameworks.",
+    desc: "To be the trusted global partner for businesses seeking exceptional talent and operational excellence, driving sustainable growth through innovative hiring solutions and structured PMO processes.",
     page: "home-5",
   },
 ];
