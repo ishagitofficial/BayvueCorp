@@ -25,7 +25,7 @@ export default function HomePage() {
       {/* block feature twelve end */}
 
       {/* portfolio two start */}
-      <PortfolioTwo />
+      {/* <PortfolioTwo /> */}
       {/* portfolio two end */}
 
       {/* text feature eight start */}
@@ -33,15 +33,15 @@ export default function HomePage() {
       {/* text feature eight end */}
 
       {/* fancy banner five start */}
-      <FancyBannerFive style_3={true} />
+      {/* <FancyBannerFive style_3={true} /> */}
       {/* fancy banner five end */}
 
       {/* feedback six start */}
-      <FeedbackSix />
+      {/* <FeedbackSix /> */}
       {/* feedback six end */}
 
       {/* team section start */}
-      <TeamSectionThree style_2={true} />
+      {/* <TeamSectionThree style_2={true} /> */}
       {/* team section end */}
 
       {/* fancy banner three start */}
