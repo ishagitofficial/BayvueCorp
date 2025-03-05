@@ -36,9 +36,7 @@ function CardItem({
 }
 
 const ServiceOneArea = () => {
-  const services = service_data.filter(
-    (s) => s.page === "home-2" || s.page === "home-4"
-  );
+  const services = service_data.filter((s) => s.page === "home-6");
   return (
     <>
       {/* text feature start */}
@@ -47,12 +45,11 @@ const ServiceOneArea = () => {
           <div className="row">
             <div className="col-lg-5 wow fadeInLeft">
               <div className="title-one">
-                <h2>15k+ clients base & growing.</h2>
+                <h2>Your Trusted Partner in Growth.</h2>
               </div>
               <p className="text-lg mt-45 lg-mt-30 mb-60 lg-mb-30">
-                Your success is our mission. As business advisors, we offer
-                expert guidance, unlocking your potential for growth and
-                profitability
+                Providing strategic recruitment and business excellence
+                solutions for long-term success.
               </p>
               <Link
                 href="/contact-us"
@@ -67,8 +64,8 @@ const ServiceOneArea = () => {
                 <div className="col-sm-6 d-flex wow fadeInUp">
                   <CardItem
                     icon={icon_2}
-                    title="Recruitment Solutions"
-                    subtitle="We are here to help you source, attract, and hire top talent for your business success."
+                    title="Employer Branding & Retention"
+                    subtitle="Beyond hiring – we help you retain and grow top talent for long-term success."
                   />
                 </div>
                 <div
@@ -77,8 +74,8 @@ const ServiceOneArea = () => {
                 >
                   <CardItem
                     icon={icon_3}
-                    title="Business Excellence"
-                    subtitle="Driving operational efficiency, innovation, and sustainable growth through Business Excellence solutions."
+                    title="Strategic Consulting"
+                    subtitle="From talent acquisition to operational excellence, we drive sustainable business success."
                   />
                 </div>
                 <div
@@ -87,8 +84,8 @@ const ServiceOneArea = () => {
                 >
                   <CardItem
                     icon={icon_4}
-                    title="Low Fees"
-                    subtitle="cupidatat non proident, sunt in culpa qui officia deserunt"
+                    title="Digital Transformation & Innovation"
+                    subtitle="Leveraging technology and expertise to streamline hiring and optimize business operations."
                   />
                 </div>
                 <div
@@ -97,8 +94,8 @@ const ServiceOneArea = () => {
                 >
                   <CardItem
                     icon={icon_5}
-                    title="Loan Facility"
-                    subtitle="quis nostrud exerct ullamo ea nisi ut aliqui com dolor"
+                    title="Workforce Optimization"
+                    subtitle="We help you align talent, strategy, and operations to achieve peak performance."
                   />
                 </div>
               </div>
@@ -115,15 +112,15 @@ const ServiceOneArea = () => {
             <div className="title-one text-center mb-40 lg-mb-10">
               <h2>Our Services</h2>
               <p className="text-lg mt-20">
-                Inciddnt ut labore et dolor magna aliu. ad mim venam, quis
-                nostru{" "}
+                We specialize in finding, attracting, and securing the right
+                talent to fuel your business success.
               </p>
             </div>
             <div className="row">
               {services.map((s, i) => (
                 <div
                   key={i}
-                  className="col-lg-4 col-md-6 d-flex wow fadeInUp"
+                  className="col-lg-6 col-md-12 d-flex wow fadeInUp"
                   data-wow-delay={`0.${i}s`}
                 >
                   <div className="card-style-two vstack tran3s w-100 mt-30">
@@ -132,11 +129,8 @@ const ServiceOneArea = () => {
                       alt="icon"
                       className="lazy-img icon me-auto"
                     />
-                    <h4 className="fw-bold mt-30 mb-25">Tax Preparation</h4>
-                    <p className="mb-20">
-                      Use receiving accounts in a growing number of currencies
-                      and get paid like a local.
-                    </p>
+                    <h4 className="fw-bold mt-30 mb-25">{s.title}</h4>
+                    <p className="mb-20">{s.desc}</p>
                     <Link
                       href="/service-details"
                       className="arrow-btn tran3s mt-auto stretched-link"
@@ -155,23 +149,23 @@ const ServiceOneArea = () => {
       {/* block feature end */}
 
       {/* feedback one start */}
-      <FeedbackOne cls="pt-120 pb-120" />
+      {/* <FeedbackOne cls="pt-120 pb-120" /> */}
       {/* feedback one end */}
 
       {/* partners logo start */}
-      <div className="partner-logo-one pt-80 lg-pt-50 pb-80 lg-pb-50">
+      {/* <div className="partner-logo-one pt-80 lg-pt-50 pb-80 lg-pb-50">
         <div className="container">
           <PartnersSliderOne />
         </div>
-      </div>
+      </div> */}
       {/* partners logo end */}
 
       {/* fancy banner start */}
-      <FancyBannerFive style_2={true} />
+      {/* <FancyBannerFive style_2={true} /> */}
       {/* fancy banner end */}
 
       {/* faq start */}
-      <FaqSectionOne cls="mt-150 lg-mt-80 mb-150 lg-mb-80" />
+      <FaqSectionOne cls="mt-100 lg-mt-80 mb-100 lg-mb-80" />
       {/* faq end */}
     </>
   );

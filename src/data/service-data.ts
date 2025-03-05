@@ -178,6 +178,48 @@ const service_data: IService[] = [
     desc: "To be the trusted global partner for businesses seeking exceptional talent and operational excellence, driving sustainable growth through innovative hiring solutions and structured PMO processes.",
     page: "home-5",
   },
+  {
+    id: 21,
+    icon: icon_12,
+    title: "Our Recruitment Services",
+    desc: "With a data-driven hiring process, AI-powered recruitment tools, and an experienced team of industry-focused recruiters, we ensure quality, speed, and efficiency in every hire. Let us help you build a high-performing workforce! Get in touch today.",
+    page: "home-6",
+  },
+  {
+    id: 22,
+    icon: icon_13,
+    title: "Our Hiring Solutions",
+    desc: "By partnering with us, you gain a strategic recruitment advantage, ensuring that your workforce is agile, skilled, and aligned with your company’s vision.",
+    page: "home-6",
+  },
+  {
+    id: 23,
+    icon: icon_14,
+    title: "Business Excellence",
+    desc: "Achieving business success requires both structured project execution and streamlined operations. At Bayvue Corp, we provide expert-driven solutions to help organizations establish efficient project management processes and optimize business operations for sustainable growth.",
+    page: "home-6",
+  },
+  {
+    id: 24,
+    icon: icon_15,
+    title: "Project Excellence",
+    desc: "Delivering projects on time and within budget requires structured planning, governance, and execution. Our Project Excellence solutions help businesses establish a robust PMO framework, ensuring efficiency, risk management, and seamless collaboration across teams.",
+    page: "home-6",
+  },
+  {
+    id: 25,
+    icon: icon_17,
+    title: "PMO (Project Management Office) Excellence",
+    desc: "With a robust PMO framework and operational excellence strategies, businesses can achieve greater efficiency, cost savings, and long-term success.",
+    page: "home-6",
+  },
+  {
+    id: 26,
+    icon: icon_18,
+    title: "Operations Excellence",
+    desc: "Optimized business operations are the backbone of a scalable and high-performing organization. Our Operations Excellence solutions focus on enhancing workflows, reducing inefficiencies, and driving productivity to help businesses stay competitive.",
+    page: "home-6",
+  },
 ];
 
 export default service_data;

@@ -4,10 +4,12 @@ import Link from "next/link";
 import faq_data from "@/data/faq-data";
 import FaqItem from "./faq-item";
 
-const FaqSectionOne = ({cls}:{cls?:string}) => {
+const FaqSectionOne = ({ cls }: { cls?: string }) => {
   return (
     <>
-      <div className={`faq-section-one ${cls?cls:'mt-150 lg-mt-120 md-mt-80'}`}>
+      <div
+        className={`faq-section-one ${cls ? cls : "mt-100 lg-mt-50 md-mt-50"}`}
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-5 wow fadeInLeft">
