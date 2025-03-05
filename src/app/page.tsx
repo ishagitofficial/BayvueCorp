@@ -49,7 +49,7 @@ export default function HomePage() {
       {/* fancy banner three end */}
 
       {/* newsletter banner start */}
-      <NewsletterBanner style_2={true} />
+      {/* <NewsletterBanner style_2={true} /> */}
       {/* newsletter banner end */}
     </main>
   );

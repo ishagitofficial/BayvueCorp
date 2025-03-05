@@ -39,39 +39,39 @@ const AboutUsPage = () => {
       {/* text feature one area end */}
 
       {/* block feature one area start */}
-      <BlockFeatureOne style_2={true} />
+      {/* <BlockFeatureOne style_2={true} /> */}
       {/* block feature one area end */}
 
       {/* text feature one area start */}
-      <TextFeatureThree style_2={true} />
+      {/* <TextFeatureThree style_2={true} /> */}
       {/* text feature one area end */}
 
       {/* feedback one start */}
-      <FeedbackOne cls="top-border pt-80 pb-80" />
+      {/* <FeedbackOne cls="top-border pt-80 pb-80" /> */}
       {/* feedback one end */}
 
       {/* partner logo start */}
-      <div className="partner-logo-one pt-80 lg-pt-40 pb-80 lg-pb-40">
+      {/* <div className="partner-logo-one pt-80 lg-pt-40 pb-80 lg-pb-40">
         <div className="container">
           <PartnersSliderOne />
         </div>
-      </div>
+      </div> */}
       {/* partner logo end */}
 
       {/* team three start */}
-      <TeamSectionThree />
+      {/* <TeamSectionThree /> */}
       {/* team three end */}
 
       {/* blogs start */}
-      <HomeFourBlogs cls="mt-180 lg-mt-80 mb-180 lg-mb-80" />
+      {/* <HomeFourBlogs cls="mt-180 lg-mt-80 mb-180 lg-mb-80" /> */}
       {/* blogs end */}
 
       {/* fancy banner three start */}
-      <FancyBannerThree />
+      {/* <FancyBannerThree /> */}
       {/* fancy banner three end */}
 
       {/* news letter start */}
-      <NewsletterBanner />
+      {/* <NewsletterBanner /> */}
       {/* news letter end */}
     </main>
   );

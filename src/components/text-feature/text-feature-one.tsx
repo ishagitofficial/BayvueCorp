@@ -58,14 +58,15 @@ function CounterBlock({
 const TextFeatureOne = () => {
   return (
     <>
-      <div className="text-feature-one mt-150 lg-mt-80">
+      <div className="text-feature-one mt-100 lg-mt-80">
         <div className="container">
           <div className="line-wrapper position-relative">
             <div className="row">
               <div className="col-lg-5 wow fadeInLeft pt-40">
                 <div className="title-one">
-                  <div className="upper-title">About us</div>
-                  <h2>15k+ Client using Our Services.</h2>
+                  <div className="upper-title">
+                    <h2>About us</h2>
+                  </div>
                 </div>
                 <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-30">
                   At Bayvue Corp, we specialize in connecting businesses with
@@ -116,7 +117,7 @@ const TextFeatureOne = () => {
             />
           </div>
 
-          <div className="counter-wrapper mt-80 lg-mt-20">
+          {/* <div className="counter-wrapper mt-80 lg-mt-20">
             <div className="row">
               <CounterBlock
                 num={120}
@@ -143,7 +144,7 @@ const TextFeatureOne = () => {
                 delay="3"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
