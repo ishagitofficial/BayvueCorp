@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import logo from "@/assets/images/logo/logo_02.svg";
+import logo from "@/assets/images/logo/logo.svg";
 import shape_1 from "@/assets/images/shape/shape_36.svg";
 import shape_2 from "@/assets/images/shape/shape_37.svg";
 import shape_3 from "@/assets/images/shape/shape_39.svg";
@@ -22,7 +22,7 @@ const FooterThree = ({ style_2 }: { style_2?: boolean }) => {
               >
                 <div className="logo mb-15">
                   <Link href="/">
-                    <Image src={logo} alt="logo" />
+                    <Image width={200} src={logo} alt="logo" />
                   </Link>
                 </div>
                 <p className="lh-sm mb-45 lg-mb-30">
@@ -41,19 +41,10 @@ const FooterThree = ({ style_2 }: { style_2?: boolean }) => {
                   <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <Link href="/pricing">Pricing Plan</Link>
-                </li>
-                <li>
                   <Link href="/about-us">About us</Link>
                 </li>
                 <li>
-                  <Link href="/service-v1">Our services</Link>
-                </li>
-                <li>
-                  <Link href="/project-v2">Portfolio</Link>
-                </li>
-                <li>
-                  <Link href="/service-v2">Features</Link>
+                  <Link href="/services">Our services</Link>
                 </li>
               </ul>
             </div>
@@ -61,16 +52,16 @@ const FooterThree = ({ style_2 }: { style_2?: boolean }) => {
               <h5 className="footer-title">Company</h5>
               <ul className="footer-nav-link style-none">
                 <li>
-                  <Link href="/about-us-2">About us</Link>
+                  <Link href="/about-us">About us</Link>
                 </li>
                 <li>
-                  <Link href="/blog-grid">Blogs</Link>
+                  <Link href="/blogs">Blogs</Link>
                 </li>
                 <li>
-                  <Link href="/faq">FAQ’s</Link>
+                  <Link href="/faqs">FAQ’s</Link>
                 </li>
                 <li>
-                  <Link href="/contact">Contact</Link>
+                  <Link href="/contact-us">Contact</Link>
                 </li>
               </ul>
             </div>
@@ -78,16 +69,16 @@ const FooterThree = ({ style_2 }: { style_2?: boolean }) => {
               <h5 className="footer-title">Support</h5>
               <ul className="footer-nav-link style-none">
                 <li>
-                  <Link href="/contact">Terms of use</Link>
+                  <Link href="#">Terms of use</Link>
                 </li>
                 <li>
-                  <Link href="/contact">Terms & conditions</Link>
+                  <Link href="#">Terms & conditions</Link>
                 </li>
                 <li>
-                  <Link href="/contact">Privacy</Link>
+                  <Link href="#">Privacy</Link>
                 </li>
                 <li>
-                  <Link href="/contact">Cookie policy</Link>
+                  <Link href="#">Cookie policy</Link>
                 </li>
               </ul>
             </div>
@@ -117,13 +108,13 @@ const FooterThree = ({ style_2 }: { style_2?: boolean }) => {
             <div className="col-xl-4 col-lg-6 order-lg-2 mb-15">
               <ul className="style-none bottom-nav d-flex justify-content-center order-lg-last">
                 <li>
-                  <Link href="/contact">Privacy & Terms</Link>
+                  <Link href="#">Privacy & Terms</Link>
                 </li>
                 <li>
-                  <Link href="/contact">Cookies</Link>
+                  <Link href="#">Cookies</Link>
                 </li>
                 <li>
-                  <Link href="/contact">Contact Us</Link>
+                  <Link href="#">Contact Us</Link>
                 </li>
               </ul>
             </div>

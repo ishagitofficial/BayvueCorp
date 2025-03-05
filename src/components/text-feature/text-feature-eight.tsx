@@ -29,19 +29,19 @@ const faq_data: IFaq[] = [
 const faq_data_2: IFaq[] = [
   {
     id: "one",
-    title: "Quality Services",
-    desc: "It only takes 5 minutes. Set-up is smooth and simple, with fully customizable page design to reflect your brand.",
+    title: "Full-Cycle Recruitment",
+    desc: "We manage the entire hiring process, from sourcing and screening to candidate selection, ensuring you get the right talent with the right skills while reducing time-to-hire and hiring costs.",
     isShow: true,
   },
   {
     id: "two",
-    title: "Fair Pricing",
-    desc: "It only takes 5 minutes. Set-up is smooth and simple, with fully customizable page design to reflect your brand.",
+    title: "Contract and Permanent Staffing",
+    desc: "Whether you need temporary, contract, or full-time employees, we offer flexible staffing solutions that align with your business needs, providing agile workforce solutions to support project demands and long-term growth.",
   },
   {
     id: "three",
-    title: "Trusted & Secure",
-    desc: "It only takes 5 minutes. Set-up is smooth and simple, with fully customizable page design to reflect your brand.",
+    title: "Executive Search and Leadership Hiring",
+    desc: "Finding C-suite executives and leadership talentrequires a specialized approach. We leverage industry expertise, market intelligence, and a deep talent network to recruit high-impact leaders who drive business success.",
   },
 ];
 
@@ -54,7 +54,7 @@ const TextFeatureEight = ({ style_2 = false }: { style_2?: boolean }) => {
   return (
     <>
       {!style_2 && (
-        <div className="text-feature-eight mt-130 lg-mt-80">
+        <div className="text-feature-eight mt-100 lg-mt-80">
           <div className="container">
             <div className="row">
               <div className="col-lg-6 wow fadeInLeft">
@@ -71,7 +71,8 @@ const TextFeatureEight = ({ style_2 = false }: { style_2?: boolean }) => {
                       <FaqItem key={i} {...faq} parent="accordionOne" />
                     ))}
                   </div>
-                  <Link href="/about-us"
+                  <Link
+                    href="/about-us"
                     className="btn-thirteen tran3 flex-fill"
                   >
                     Learn More
@@ -94,7 +95,7 @@ const TextFeatureEight = ({ style_2 = false }: { style_2?: boolean }) => {
       )}
 
       {style_2 && (
-        <div className="text-feature-eight mt-160 lg-mt-80">
+        <div className="text-feature-eight mt-100 mb-100 lg-mt-80">
           <div className="container">
             <div className="row">
               <div className="col-xl-5 col-lg-6 wow fadeInLeft">
@@ -111,7 +112,12 @@ const TextFeatureEight = ({ style_2 = false }: { style_2?: boolean }) => {
                   id="accordionOne"
                 >
                   {faq_data_2.map((faq, i) => (
-                    <FaqItem key={i} {...faq} parent="accordionOne" cls="fw-bold" />
+                    <FaqItem
+                      key={i}
+                      {...faq}
+                      parent="accordionOne"
+                      cls="fw-bold"
+                    />
                   ))}
                 </div>
               </div>

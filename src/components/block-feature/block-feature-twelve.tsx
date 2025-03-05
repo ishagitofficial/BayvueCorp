@@ -19,7 +19,7 @@ const BlockFeatureTwelve = () => {
     .filter((s) => s.page === "home-5")
     .slice(4, 6);
   return (
-    <div className="block-feature-twelve position-relative pt-100 lg-pt-80 pb-180 lg-pb-80">
+    <div className="block-feature-twelve position-relative pt-100 lg-pt-80 pb-100 lg-pb-80">
       <div className="container">
         <div className="row">
           <div className="col-lg-11">
@@ -43,9 +43,7 @@ const BlockFeatureTwelve = () => {
                       “Efficient, knowledgeable, & smooth experience. Highly
                       recommended”
                     </blockquote>
-                    <h6>
-                      - Musa Jamy. <span>CEO babun</span>
-                    </h6>
+                    <h6>{/* - Musa Jamy. <span>CEO babun</span> */}</h6>
                   </div>
                 </div>
                 <div className="col-lg-5 d-flex align-items-end justify-content-center order-lg-first">
@@ -70,7 +68,7 @@ const BlockFeatureTwelve = () => {
                 <h4 className="fw-bold mt-50 mb-25">{s.title}</h4>
                 <p className="mb-20">{s.desc}</p>
                 <Link
-                  href="/service-details"
+                  href="/services"
                   className="arrow-btn tran3s mt-auto stretched-link"
                 >
                   <Image src={arrow} alt="arrow-icon" className="lazy-img" />
@@ -81,14 +79,20 @@ const BlockFeatureTwelve = () => {
           <div className="col-lg-8 d-flex mt-40 md-mt-20">
             <div className="card-style-nineteen">
               <div className="row">
-                <div className="col-lg-7">
-                  <h2 className="color-deep fw-bold mt-20">We’r Bayvue Corp</h2>
+                <div className="col-lg-12">
+                  <h2 className="color-deep fw-bold mt-20">At Bayvue Corp,</h2>
                   <p className="text-md mt-30 lg-mt-20 mb-35">
-                    Your success is our mission. As business advisors, we offer
-                    expert guidance, unlocking your potential
+                    We specialize in finding, attracting, and securing the right
+                    talent to fuel your business success. Our strategic
+                    recruitment solutions ensure that companies get access to
+                    top-tier professionals efficiently and cost-effectively.
+                    Whether you need IT specialists, healthcare professionals,
+                    financial experts, or executive leaders, our expert- driven
+                    approach delivers the best-fit candidates for your
+                    organization.
                   </p>
                   <Link
-                    href="/service-v2"
+                    href="/services"
                     className="btn-seven d-inline-flex align-items-center"
                   >
                     <span className="text">Learn More</span>
@@ -97,7 +101,7 @@ const BlockFeatureTwelve = () => {
                     </div>
                   </Link>
                 </div>
-                <div className="col-lg-4 ms-auto">
+                {/* <div className="col-lg-4 ms-auto">
                   <div className="counter-block-one md-mt-40">
                     <div className="main-count fw-bold">
                       <span className="counter">710</span>k+
@@ -110,7 +114,7 @@ const BlockFeatureTwelve = () => {
                     </div>
                     <p className="m0">Rapid wealth grow</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

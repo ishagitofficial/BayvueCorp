@@ -58,17 +58,13 @@ const HeroBannerSix = () => {
           </div>
         </div>
 
-        <div className="row">
+        {/* <div className="row">
           <div className="col-12">
             <div className="partner-logo-one pt-60 md-pt-50">
-              <p className="fw-500 text-dark mb-40">
-                <span className="text-decoration-underline">Join 27,000+</span>{" "}
-                companies who’ve reached{" "}
-              </p>
               <PartnersSliderOne />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <Image
         src={shape_2}
