@@ -16,42 +16,31 @@ export const metadata: Metadata = {
 
 const ServiceDetailsPage = () => {
   return (
-    <Wrapper>
-      <div className="main-page-wrapper">
-        {/* header start */}
-        <HeaderTwo />
-        {/* header end */}
-        <main>
-          {/* breadcrumb start */}
-          <BreadcrumbOne
-            title="Single Service Details"
-            subtitle="Offering solutions & services to address a spectrum of financial issues"
-            page="Services"
-            shape={shape}
-            bg_img={service_bg}
-            style_2={true}
-            cls="me-xl-4"
-          />
-          {/* breadcrumb end */}
+    <main>
+      {/* breadcrumb start */}
+      <BreadcrumbOne
+        title="Single Service Details"
+        subtitle="Offering solutions & services to address a spectrum of financial issues"
+        page="Services"
+        shape={shape}
+        bg_img={service_bg}
+        style_2={true}
+        cls="me-xl-4"
+      />
+      {/* breadcrumb end */}
 
-          {/* service details area start */}
-          <ServiceDetailsArea />
-          {/* service details area end */}
+      {/* service details area start */}
+      <ServiceDetailsArea />
+      {/* service details area end */}
 
-          {/* fancy banner three start */}
-          <FancyBannerThree />
-          {/* fancy banner three end */}
+      {/* fancy banner three start */}
+      <FancyBannerThree />
+      {/* fancy banner three end */}
 
-          {/* news letter start */}
-          <NewsletterBanner />
-          {/* news letter end */}
-        </main>
-
-        {/* footer start */}
-        <FooterThree style_2={true} />
-        {/* footer end */}
-      </div>
-    </Wrapper>
+      {/* news letter start */}
+      <NewsletterBanner />
+      {/* news letter end */}
+    </main>
   );
 };
 
