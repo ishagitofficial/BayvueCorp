@@ -43,12 +43,6 @@ const HeroBannerSix = () => {
           <div className="col-md-6 d-md-flex justify-content-end wow fadeInRight">
             <div className="media-wrapper position-relative ms-lg-5">
               <Image
-                src={screen_2}
-                alt="screen"
-                className="lazy-img shapes screen_02"
-                style={imgStyle}
-              />
-              <Image
                 src={shape_1}
                 alt="shape"
                 className="lazy-img shapes bg-shape"
