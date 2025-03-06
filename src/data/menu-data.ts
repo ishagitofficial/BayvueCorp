@@ -10,6 +10,11 @@ const menu_data: IMenu[] = [
     id: 2,
     link: "/services",
     title: "Services",
+    dropdown: true,
+    dropdown_menus: [
+      { link: "/services/recruitment", title: "Recruitment" },
+      { link: "/services/business-excellence", title: "Business Excellence" },
+    ],
   },
   {
     id: 3,

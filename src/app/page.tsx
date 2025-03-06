@@ -1,13 +1,10 @@
 import HeroBannerSix from "@/components/hero-banner/hero-banner-six";
 import BlockFeatureEleven from "@/components/block-feature/block-feature-eleven";
 import BlockFeatureTwelve from "@/components/block-feature/block-feature-twelve";
-import PortfolioTwo from "@/components/portfolio/portfolio-two";
 import TextFeatureEight from "@/components/text-feature/text-feature-eight";
-import FancyBannerFive from "@/components/fancy-banner/fancy-banner-five";
-import FeedbackSix from "@/components/feedback/feedback-six";
-import TeamSectionThree from "@/components/team/team-section-three";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
-import NewsletterBanner from "@/components/newsletter/newsletter-banner";
+import BlockFeatureSix from "@/components/block-feature/block-feature-six";
+import BlockFeatureTwo from "@/components/block-feature/block-feature-two";
 
 export default function HomePage() {
   return (
@@ -17,11 +14,13 @@ export default function HomePage() {
       {/* hero banner end */}
 
       {/* block feature eleven start */}
-      <BlockFeatureEleven />
+      {/* <BlockFeatureEleven /> */}
       {/* block feature eleven end */}
+      <BlockFeatureSix />
 
       {/* block feature twelve start */}
-      <BlockFeatureTwelve />
+      <BlockFeatureTwo />
+      {/* <BlockFeatureTwelve /> */}
       {/* block feature twelve end */}
 
       {/* portfolio two start */}
