@@ -34,11 +34,11 @@ const ServicePage = () => {
       {/* service v1 area end */}
 
       {/* fancy banner three start */}
-      <FancyBannerThree />
+      {/* <FancyBannerThree /> */}
       {/* fancy banner three end */}
 
       {/* news letter start */}
-      <NewsletterBanner />
+      {/* <NewsletterBanner /> */}
       {/* news letter end */}
     </main>
   );

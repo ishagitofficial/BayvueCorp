@@ -15,7 +15,7 @@ const imgStyle = {
 
 const HeroBannerSix = () => {
   return (
-    <div className="hero-banner-six pt-170 md-pt-110 position-relative">
+    <div className="hero-banner-six pt-170 pb-40 md-pt-110 position-relative">
       <div className="container position-relative">
         <div className="row justify-content-between">
           <div className="col-md-6 wow fadeInLeft">
