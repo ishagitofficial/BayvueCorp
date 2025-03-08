@@ -9,7 +9,7 @@ const BlockFeatureTwo = () => {
     .filter((s) => s.page === "home-5")
     .slice(4, 6);
   return (
-    <div className="block-feature-two mt-80">
+    <div className="block-feature-two mt-0">
       <div className="container">
         <div className="wrapper">
           <div className="row align-items-top">
@@ -47,12 +47,20 @@ const BlockFeatureTwo = () => {
             })}
 
             <div className="col-md-3">
-              <div className="ps-lg-5 sm-pb-30 sm-pt-30">
-                <div className="numb fw-500">
-                  <span className="counter">13</span>+
-                </div>
+              <div className=" sm-pb-30 sm-pt-30">
+                <h4 className="fw-bold mt-40 sm-mt-20 mb-20">
+                  At Bayvue Corp, we specialize in finding, attracting, and
+                  securing the right talent to fuel your business success. Our
+                  strategic recruitment solutions ensure that companies get
+                  access to top-tier professionals efficiently and
+                  cost-effectively. Whether you need IT specialists, healthcare
+                  professionals, financial experts, or executive leaders, our
+                  expert-driven approach delivers the best-fit candidates for
+                  your organization.
+                </h4>
                 <p className="m0">
-                  Years Experience <br /> with proud.
+                  Backed by industry experts, we deliver recruitment and
+                  business excellence solutions that drive success.
                 </p>
               </div>
             </div>

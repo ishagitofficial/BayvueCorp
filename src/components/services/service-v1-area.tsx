@@ -40,16 +40,18 @@ const ServiceOneArea = () => {
   return (
     <>
       {/* text feature start */}
-      <div className="text-feature-one mt-150 lg-mt-80">
+      <div className="text-feature-one mt-100 lg-mt-80 pb-20">
         <div className="container">
           <div className="row">
             <div className="col-lg-5 wow fadeInLeft">
               <div className="title-one">
-                <h2>Your Trusted Partner in Growth.</h2>
+                <h2>
+                  Tailored Recruitment & Business Solutions for Lasting Success.
+                </h2>
               </div>
               <p className="text-lg mt-45 lg-mt-30 mb-60 lg-mb-30">
-                Providing strategic recruitment and business excellence
-                solutions for long-term success.
+                From sourcing top talent to optimizing business operations, we
+                empower organizations with strategic solutions.
               </p>
               <Link
                 href="/contact-us"
@@ -65,7 +67,7 @@ const ServiceOneArea = () => {
                   <CardItem
                     icon={icon_2}
                     title="Employer Branding & Retention"
-                    subtitle="Beyond hiring – we help you retain and grow top talent for long-term success."
+                    subtitle="Strengthen your employer brand and retain top talent with tailored strategies."
                   />
                 </div>
                 <div
@@ -75,7 +77,7 @@ const ServiceOneArea = () => {
                   <CardItem
                     icon={icon_3}
                     title="Strategic Consulting"
-                    subtitle="From talent acquisition to operational excellence, we drive sustainable business success."
+                    subtitle="Expert guidance in talent acquisition and operational excellence to drive business success."
                   />
                 </div>
                 <div
@@ -85,7 +87,7 @@ const ServiceOneArea = () => {
                   <CardItem
                     icon={icon_4}
                     title="Digital Transformation & Innovation"
-                    subtitle="Leveraging technology and expertise to streamline hiring and optimize business operations."
+                    subtitle="Implement AI-driven hiring and modern business solutions for seamless growth."
                   />
                 </div>
                 <div
@@ -95,7 +97,7 @@ const ServiceOneArea = () => {
                   <CardItem
                     icon={icon_5}
                     title="Workforce Optimization"
-                    subtitle="We help you align talent, strategy, and operations to achieve peak performance."
+                    subtitle="Align talent, improve efficiency, and create a high-performing workforce."
                   />
                 </div>
               </div>
@@ -106,7 +108,7 @@ const ServiceOneArea = () => {
       {/* text feature end */}
 
       {/* block feature start */}
-      <div className="block-feature-one position-relative light-bg-deep mt-100 lg-mt-60 pt-120 lg-pt-60 pb-130 lg-pb-60">
+      <div className="block-feature-one position-relative light-bg-deep mt-0 lg-mt-0 pt-120 lg-pt-60 pb-130 lg-pb-60">
         <div className="container">
           <div className="position-relative">
             <div className="title-one text-center mb-40 lg-mb-10">

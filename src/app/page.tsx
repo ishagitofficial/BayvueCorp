@@ -44,7 +44,7 @@ export default function HomePage() {
       {/* team section end */}
 
       {/* fancy banner three start */}
-      <FancyBannerThree />
+      {/* <FancyBannerThree /> */}
       {/* fancy banner three end */}
 
       {/* newsletter banner start */}
