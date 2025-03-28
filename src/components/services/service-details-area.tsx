@@ -24,7 +24,7 @@ function ServiceNav({
   title,
   active,
 }: {
-  icon: StaticImageData;
+  icon?: StaticImageData;
   title: string;
   active?: boolean;
 }) {
@@ -34,7 +34,7 @@ function ServiceNav({
         href="#"
         className={`d-flex align-items-center w-100 ${active ? "active" : ""}`}
       >
-        <Image src={icon} alt="icon" className="lazy-img" />
+        {icon && <Image src={icon} alt="icon" className="lazy-img" />}
         <span>{title}</span>
       </Link>
     </li>
@@ -46,14 +46,14 @@ function CardItem({
   title,
   subtitle,
 }: {
-  icon: StaticImageData;
+  icon?: StaticImageData;
   title: string;
   subtitle: string;
 }) {
   return (
     <div className="card-style-sixteen text-center mt-40">
       <div className="icon m-auto tran3s rounded-circle d-flex align-items-center justify-content-center">
-        <Image src={icon} alt="icon" className="lazy-img" />
+        {icon && <Image src={icon} alt="icon" className="lazy-img" />}
       </div>
       <h4 className="fw-bold mt-35 lg-mt-30 mb-15">{title}</h4>
       <p className="m0">{subtitle}</p>
@@ -64,111 +64,74 @@ function CardItem({
 const imgStyle = {
   height: "auto",
 };
-const ServiceDetailsArea = () => {
+const ServiceDetailsArea = ({ service }: any) => {
   return (
     <div className="service-details mt-100 lg-mt-80 mb-100 lg-mb-80">
       <div className="container">
         <div className="row">
           <div className="col-xxl-9 col-lg-8 order-lg-last">
             <div className="details-meta ps-xxl-5 ps-xl-3">
-              <h2>Multiple Accounts for flexible banking.</h2>
+              <h2>Comprehensive Hiring Solutions</h2>
               <p>
-                Risk management and compliance, when approached strategically,
-                have the potential to go beyond mitigating threats and
-                protecting a company’s operations and reputation.They can
-                actually generate value and create opportunities.{" "}
+                We manage the entire hiring process, from sourcing to
+                onboarding, ensuring you get the right talent while reducing
+                time-to-hire and hiring costs.
               </p>
               <p>
-                Our dedicated risk and compliance consulting team assists
-                clients in transforming uncertainty into advantageous prospects.
-                We work collaboratively with organizations to identify and
-                leverage the potential within their risk and compliance
-                functions, enabling them to thrive in an ever-changing business
-                landscape.
+                Our process includes workforce planning, job profiling, targeted
+                sourcing, competency-based screening, interview coordination,
+                and seamless onboarding support.
               </p>
               <div className="img-meta mb-60 lg-mb-40">
-                <Image
-                  src={service_img}
-                  alt="service_img"
+                {/* <Image
+                  src="/images/recruitment.jpg"
+                  alt="Recruitment Process"
                   className="lazy-img w-100 rounded-4"
-                  style={imgStyle}
-                />
+                /> */}
               </div>
-              <h3>Our Processing.</h3>
+              <h3>Our Processing</h3>
               <p>
-                Risk management and compliance, when approached strategically,
-                have the potential to go beyond mitigating threats and
-                protecting a company’s operations and reputation.
+                We follow a structured approach to hiring that ensures
+                efficiency and quality.
               </p>
               <div className="line-wrapper pb-30 mt-60 lg-mt-40 mb-70 lg-mb-40">
                 <div className="row">
                   <div className="col-md-4 wow fadeInUp">
                     <CardItem
-                      icon={icon_10}
-                      title="Collect Doc"
-                      subtitle="We collect require documents & send for check"
+                      title="Collect Requirements"
+                      subtitle="Understanding your hiring needs & gathering job specifications."
                     />
                   </div>
                   <div className="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
                     <CardItem
-                      icon={icon_11}
-                      title="Check & Finalize"
-                      subtitle="We check the documents & send for final approval"
+                      title="Screening & Selection"
+                      subtitle="Shortlisting candidates through rigorous evaluation."
                     />
                   </div>
                   <div className="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
                     <CardItem
-                      icon={icon_12}
-                      title="Approved"
-                      subtitle="After approve you ready to use your accounts"
+                      title="Final Hiring"
+                      subtitle="Ensuring smooth onboarding & compliance management."
                     />
                   </div>
                 </div>
               </div>
-              <div className="light-bg-deep quote-wrapper position-relative mb-60 lg-mb-40">
-                <div className="d-xl-flex align-items-start">
-                  <Image src={icon_13} alt="icon" className="lazy-img icon" />
-                  <div className="ps-xl-5">
-                    <blockquote>
-                      Quick solutions coupled with extraordinary performance— a
-                      recommendation that is great though.
-                    </blockquote>
-                    <div>
-                      <span className="fw-bold">James Bond.</span> USA
-                    </div>
-                  </div>
-                </div>
-                <Image
-                  src={ils_icon}
-                  alt="ils_icon"
-                  className="lazy-img shapes shape_01"
-                />
-              </div>
               <h3>Qualifications & Requirements</h3>
-              <p>
-                Risk management and compliance, when approached strategically,
-                have the potential to go beyond mitigating threats and
-                protecting a company’s operations and reputation. They can
-                actually generate value and create opportunities.{" "}
-              </p>
               <ul className="style-none list-item pb-20">
-                <li>Need to be 18+</li>
-                <li>Require valid passport, driving license or national ID.</li>
-                <li>Need to be a job holder</li>
-                <li>Must be citizen of republic of United States</li>
-                <li>2 copy passport size photo.</li>
+                <li>Industry-specific experience preferred</li>
+                <li>Strong communication & leadership skills</li>
+                <li>Proven ability to work in a fast-paced environment</li>
               </ul>
-              <p>
-                Our dedicated risk and compliance consulting team assists
-                clients in transforming uncertainty into advantageous prospects.
-              </p>
             </div>
           </div>
           <div className="col-xxl-3 col-lg-4 order-lg-first">
             <aside className="md-mt-40">
               <div className="service-nav-item">
                 <ul className="style-none">
-                  <ServiceNav
+                  {service?.details?.map((x: any, index: any) => {
+                    return <ServiceNav key={x.name} title={x.name} />;
+                  })}
+                  {/* <ServiceNav
                     icon={icon_1}
                     title="Multiple Accounts"
                     active={true}
@@ -180,7 +143,7 @@ const ServiceDetailsArea = () => {
                   <ServiceNav icon={icon_6} title="Saving Account" />
                   <ServiceNav icon={icon_7} title="Agent Banking" />
                   <ServiceNav icon={icon_8} title="Credit & Debit Cards" />
-                  <ServiceNav icon={icon_9} title="Consultation" />
+                  <ServiceNav icon={icon_9} title="Consultation" /> */}
                 </ul>
               </div>
               <div className="contact-banner text-center mt-40 lg-mt-20">
