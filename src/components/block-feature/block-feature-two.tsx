@@ -48,7 +48,7 @@ const BlockFeatureTwo = () => {
 
             <div className="col-md-3">
               <div className=" sm-pb-30 sm-pt-30">
-                <h4 className="fw-bold mt-40 sm-mt-20 mb-20">
+                <h4 className="mt-40 sm-mt-20 mb-20">
                   At Bayvue Corp, we specialize in finding, attracting, and
                   securing the right talent to fuel your business success. Our
                   strategic recruitment solutions ensure that companies get
@@ -58,10 +58,6 @@ const BlockFeatureTwo = () => {
                   expert-driven approach delivers the best-fit candidates for
                   your organization.
                 </h4>
-                <p className="m0">
-                  Backed by industry experts, we deliver recruitment and
-                  business excellence solutions that drive success.
-                </p>
               </div>
             </div>
             {/* <div className="col-md-4">
