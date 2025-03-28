@@ -128,7 +128,7 @@ const ServiceDetailsArea = ({ service }: any) => {
             <aside className="md-mt-40">
               <div className="service-nav-item">
                 <ul className="style-none">
-                  {service.details.map((x: any, index: any) => {
+                  {service?.details?.map((x: any, index: any) => {
                     return <ServiceNav key={x.name} title={x.name} />;
                   })}
                   {/* <ServiceNav
