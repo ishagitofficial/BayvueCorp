@@ -73,6 +73,7 @@ const ServiceDetailsArea = ({ service }: any) => {
             {service?.details?.map((x: any, index: any) => {
               return (
                 <div
+                  key={index}
                   className="details-meta ps-xxl-5 ps-xl-3"
                   id={`${x.name.replaceAll(" ", "-")}`}
                   dangerouslySetInnerHTML={{ __html: x.details }}
