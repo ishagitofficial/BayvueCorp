@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -44,7 +44,7 @@ const HeaderFour = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                   {/* header navbar start */}
-                  <Navbar logo_white={true} />
+                  <Navbar />
                   {/* header navbar end */}
                 </div>
               </nav>

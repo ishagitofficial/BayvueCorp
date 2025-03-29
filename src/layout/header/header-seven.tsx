@@ -1,18 +1,22 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import logo from '@/assets/images/logo/logo_01.svg';
-import Navbar from './navbar';
-import LoginModal from '@/components/common/login-modal';
-import useSticky from '@/hooks/use-sticky';
+import logo from "@/assets/images/logo/logo_01.svg";
+import Navbar from "./navbar";
+import LoginModal from "@/components/common/login-modal";
+import useSticky from "@/hooks/use-sticky";
 
 const HeaderSeven = () => {
-  const {sticky} = useSticky();
+  const { sticky } = useSticky();
   return (
     <>
-      <header className={`theme-main-menu menu-overlay white-vr sticky-menu ${sticky?'fixed':''}`}>
+      <header
+        className={`theme-main-menu menu-overlay white-vr sticky-menu ${
+          sticky ? "fixed" : ""
+        }`}
+      >
         <div className="inner-content position-relative">
           <div className="top-header">
             <div className="d-flex align-items-center justify-content-between">
@@ -32,12 +36,20 @@ const HeaderSeven = () => {
                 </ul>
               </div>
               <nav className="navbar navbar-expand-lg p0 order-lg-2">
-                <button className="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button
+                  className="navbar-toggler d-block d-lg-none"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
                   <span></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                   {/* header navbar start */}
-                  <Navbar logo_white={true} />
+                  <Navbar />
                   {/* header navbar end */}
                 </div>
               </nav>

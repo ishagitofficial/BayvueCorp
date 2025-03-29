@@ -1,18 +1,22 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
 import Navbar from "./navbar";
-import logo from '@/assets/images/logo/logo_01.svg'
+import logo from "@/assets/images/logo/logo_01.svg";
 import useSticky from "@/hooks/use-sticky";
 import LoginModal from "@/components/common/login-modal";
 
 const HeaderTwo = () => {
-  const {sticky} = useSticky();
+  const { sticky } = useSticky();
   return (
     <>
-      <header className={`theme-main-menu menu-overlay menu-style-one white-vr sticky-menu ${sticky?'fixed':''}`}>
+      <header
+        className={`theme-main-menu menu-overlay menu-style-one white-vr sticky-menu ${
+          sticky ? "fixed" : ""
+        }`}
+      >
         <div className="inner-content position-relative">
           <div className="top-header">
             <div className="d-flex align-items-center justify-content-between">
@@ -45,7 +49,7 @@ const HeaderTwo = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                   {/* header navbar start */}
-                  <Navbar logo_white={true} />
+                  <Navbar />
                   {/* header navbar end */}
                 </div>
               </nav>
@@ -55,7 +59,7 @@ const HeaderTwo = () => {
       </header>
 
       {/* login modal start */}
-      <LoginModal/>
+      <LoginModal />
       {/* login modal end */}
     </>
   );

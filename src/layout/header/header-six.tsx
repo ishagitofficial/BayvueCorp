@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
@@ -8,9 +8,21 @@ import icon from "@/assets/images/icon/icon_94.svg";
 import LoginModal from "@/components/common/login-modal";
 import useSticky from "@/hooks/use-sticky";
 import Navbar from "./navbar";
+import { usePathname } from "next/navigation";
 
 const HeaderSix = () => {
   const { sticky } = useSticky();
+  const [show, setShow] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setShow(false);
+  }, [pathname]);
+
+  const onClickHandler = () => {
+    setShow(!show);
+  };
+
   return (
     <>
       <header
@@ -26,48 +38,21 @@ const HeaderSix = () => {
                   <Image src={logo} alt="logo" />
                 </Link>
               </div>
-              <div className="right-widget ms-auto ms-lg-0 me-3 me-lg-0 order-lg-3">
-                <ul className="d-flex align-items-center style-none">
-                  <li className="d-flex align-items-center login-btn-two">
-                    <Image
-                      src={icon}
-                      alt="icon"
-                      className="lazy-img icon me-2"
-                    />
-                    <a
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#loginModal"
-                      className="fw-500"
-                    >
-                      Login
-                    </a>
-                  </li>
-                  <li className="d-none d-md-inline-block ms-3 ms-xl-4">
-                    <a
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#loginModal"
-                      className="fw-500 signup-btn-two tran3s"
-                    >
-                      Sign Up
-                    </a>
-                  </li>
-                </ul>
-              </div>
+
               <nav className="navbar navbar-expand-lg p0 ms-lg-5 order-lg-2">
                 <button
+                  onClick={onClickHandler}
                   className="navbar-toggler d-block d-lg-none"
                   type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarNav"
-                  aria-controls="navbarNav"
-                  aria-expanded="false"
+                  aria-expanded={show}
                   aria-label="Toggle navigation"
                 >
                   <span></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
+                <div
+                  className={`collapse navbar-collapse ${show ? "show" : ""}`}
+                  id="navbarNav"
+                >
                   {/* header navbar start */}
                   <Navbar />
                   {/* header navbar end */}

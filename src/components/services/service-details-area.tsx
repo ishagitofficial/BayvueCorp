@@ -31,7 +31,7 @@ function ServiceNav({
   return (
     <li>
       <Link
-        href="#"
+        href={`#${title.replaceAll(" ", "-")}`}
         className={`d-flex align-items-center w-100 ${active ? "active" : ""}`}
       >
         {icon && <Image src={icon} alt="icon" className="lazy-img" />}
@@ -70,59 +70,16 @@ const ServiceDetailsArea = ({ service }: any) => {
       <div className="container">
         <div className="row">
           <div className="col-xxl-9 col-lg-8 order-lg-last">
-            <div className="details-meta ps-xxl-5 ps-xl-3">
-              <h2>Comprehensive Hiring Solutions</h2>
-              <p>
-                We manage the entire hiring process, from sourcing to
-                onboarding, ensuring you get the right talent while reducing
-                time-to-hire and hiring costs.
-              </p>
-              <p>
-                Our process includes workforce planning, job profiling, targeted
-                sourcing, competency-based screening, interview coordination,
-                and seamless onboarding support.
-              </p>
-              <div className="img-meta mb-60 lg-mb-40">
-                {/* <Image
-                  src="/images/recruitment.jpg"
-                  alt="Recruitment Process"
-                  className="lazy-img w-100 rounded-4"
-                /> */}
-              </div>
-              <h3>Our Processing</h3>
-              <p>
-                We follow a structured approach to hiring that ensures
-                efficiency and quality.
-              </p>
-              <div className="line-wrapper pb-30 mt-60 lg-mt-40 mb-70 lg-mb-40">
-                <div className="row">
-                  <div className="col-md-4 wow fadeInUp">
-                    <CardItem
-                      title="Collect Requirements"
-                      subtitle="Understanding your hiring needs & gathering job specifications."
-                    />
-                  </div>
-                  <div className="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <CardItem
-                      title="Screening & Selection"
-                      subtitle="Shortlisting candidates through rigorous evaluation."
-                    />
-                  </div>
-                  <div className="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <CardItem
-                      title="Final Hiring"
-                      subtitle="Ensuring smooth onboarding & compliance management."
-                    />
-                  </div>
-                </div>
-              </div>
-              <h3>Qualifications & Requirements</h3>
-              <ul className="style-none list-item pb-20">
-                <li>Industry-specific experience preferred</li>
-                <li>Strong communication & leadership skills</li>
-                <li>Proven ability to work in a fast-paced environment</li>
-              </ul>
-            </div>
+            {service?.details?.map((x: any, index: any) => {
+              return (
+                <div
+                  key={index}
+                  className="details-meta ps-xxl-5 ps-xl-3"
+                  id={`${x.name.replaceAll(" ", "-")}`}
+                  dangerouslySetInnerHTML={{ __html: x.details }}
+                ></div>
+              );
+            })}
           </div>
           <div className="col-xxl-3 col-lg-4 order-lg-first">
             <aside className="md-mt-40">
@@ -146,12 +103,12 @@ const ServiceDetailsArea = ({ service }: any) => {
                   <ServiceNav icon={icon_9} title="Consultation" /> */}
                 </ul>
               </div>
-              <div className="contact-banner text-center mt-40 lg-mt-20">
+              {/* <div className="contact-banner text-center mt-40 lg-mt-20">
                 <h3 className="mb-20">Any Questions? Let’s talk</h3>
                 <Link href="/contact" className="tran3s fw-500">
                   Let’s Talk
                 </Link>
-              </div>
+              </div> */}
             </aside>
           </div>
         </div>
