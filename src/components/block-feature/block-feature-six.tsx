@@ -99,7 +99,9 @@ const BlockFeatureSix = ({ style_2 = false }: { style_2?: boolean }) => {
                       <h4 className="fw-bold mt-30 mb-20">{item.title}</h4>
                       <p>{item.desc}</p>
                       <Link
-                        href="/service-details"
+                        href={`/services/${
+                          i === 0 ? "recruitment" : "business-excellence"
+                        }`}
                         className="stretched-link"
                       ></Link>
                     </div>

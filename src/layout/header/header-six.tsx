@@ -26,35 +26,7 @@ const HeaderSix = () => {
                   <Image src={logo} alt="logo" />
                 </Link>
               </div>
-              <div className="right-widget ms-auto ms-lg-0 me-3 me-lg-0 order-lg-3">
-                <ul className="d-flex align-items-center style-none">
-                  <li className="d-flex align-items-center login-btn-two">
-                    <Image
-                      src={icon}
-                      alt="icon"
-                      className="lazy-img icon me-2"
-                    />
-                    <a
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#loginModal"
-                      className="fw-500"
-                    >
-                      Login
-                    </a>
-                  </li>
-                  <li className="d-none d-md-inline-block ms-3 ms-xl-4">
-                    <a
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#loginModal"
-                      className="fw-500 signup-btn-two tran3s"
-                    >
-                      Sign Up
-                    </a>
-                  </li>
-                </ul>
-              </div>
+
               <nav className="navbar navbar-expand-lg p0 ms-lg-5 order-lg-2">
                 <button
                   className="navbar-toggler d-block d-lg-none"
