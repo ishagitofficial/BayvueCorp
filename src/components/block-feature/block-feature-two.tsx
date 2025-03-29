@@ -10,7 +10,7 @@ const BlockFeatureTwo = () => {
     .slice(4, 6);
   return (
     <div className="block-feature-two mt-0">
-      <div className="container">
+      <div className="container" style={{ maxWidth: 1250 }}>
         <div className="wrapper">
           <div className="row align-items-top">
             {service_items.map((item, index) => {
@@ -20,7 +20,7 @@ const BlockFeatureTwo = () => {
                     index === 0
                       ? "col-md-4"
                       : index === 1
-                      ? "col-md-5"
+                      ? "col-md-4"
                       : "col-md-3"
                   }`}
                   key={item.id}
@@ -46,9 +46,13 @@ const BlockFeatureTwo = () => {
               );
             })}
 
-            <div className="col-md-3">
+            <div className="col-md-4">
               <div className=" sm-pb-30 sm-pt-30">
-                <h4 className="mt-40 sm-mt-20 mb-20">
+                <h4 className="fw-bold mt-40 sm-mt-20 mb-20">{"About Us"}</h4>
+                <p
+                  className="fw-medium"
+                  style={{ fontWeight: "400 !important" }}
+                >
                   At Bayvue Corp, we specialize in finding, attracting, and
                   securing the right talent to fuel your business success. Our
                   strategic recruitment solutions ensure that companies get
@@ -57,7 +61,7 @@ const BlockFeatureTwo = () => {
                   professionals, financial experts, or executive leaders, our
                   expert-driven approach delivers the best-fit candidates for
                   your organization.
-                </h4>
+                </p>
               </div>
             </div>
             {/* <div className="col-md-4">

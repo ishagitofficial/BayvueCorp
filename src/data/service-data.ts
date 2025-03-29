@@ -19,7 +19,8 @@ import icon_13 from "@/assets/images/icon/icon_41.svg";
 import icon_14 from "@/assets/images/icon/icon_42.svg";
 // home 5
 import icon_15 from "@/assets/images/icon/icon_95.svg";
-import icon_16 from "@/assets/images/icon/icon_95.svg";
+import icon_16 from "@/assets/images/icon/icon_70.svg";
+import icon_61 from "@/assets/images/icon/icon_68.svg";
 import icon_17 from "@/assets/images/icon/icon_10.svg";
 import icon_18 from "@/assets/images/icon/icon_11.svg";
 
@@ -159,7 +160,7 @@ const service_data: IService[] = [
   },
   {
     id: 18,
-    icon: icon_16,
+    icon: icon_61,
     title: "Business Excellence",
     desc: "Driving operational efficiency, innovation, and sustainable growth through Business Excellence solutions.",
     page: "home-5",
@@ -180,7 +181,7 @@ const service_data: IService[] = [
   },
   {
     id: 21,
-    icon: icon_8,
+    icon: icon_61,
     title: "Our Recruitment Services",
     desc: "With a data-driven hiring process, AI-powered recruitment tools, and an experienced team of industry-focused recruiters, we ensure quality, speed, and efficiency in every hire. Let us help you build a high-performing workforce! Get in touch today.",
     page: "home-6",
@@ -194,7 +195,7 @@ const service_data: IService[] = [
   // },
   {
     id: 23,
-    icon: icon_9,
+    icon: icon_16,
     title: "Business Excellence",
     desc: "Achieving business success requires both structured project execution and streamlined operations. At Bayvue Corp, we provide expert-driven solutions to help organizations establish efficient project management processes and optimize business operations for sustainable growth.",
     page: "home-6",
