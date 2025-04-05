@@ -54,7 +54,7 @@ const ContactForm = () => {
 
   // WhatsApp handling function
   const handleWhatsAppSubmit = (data: FormData) => {
-    const phoneNumber = "YOUR_PHONE_NUMBER"; // Add your WhatsApp business number
+    const phoneNumber = "+919561828767"; // Add your WhatsApp business number
     const message = encodeURIComponent(`
       Name: ${data.name}
       Email: ${data.email}
@@ -113,7 +113,7 @@ const ContactForm = () => {
       </div>
       <div className="col-12">
         <div className="row">
-          <div className="col-6">
+          <div className="col-md-6 col-xs-12 mb-2">
             <button
               type="button"
               onClick={handleSubmit(handleEmailSubmit)}
@@ -123,7 +123,7 @@ const ContactForm = () => {
               Send Message
             </button>
           </div>
-          <div className="col-6">
+          <div className="col-md-6 col-xs-12 mb-2">
             <button
               type="button"
               onClick={handleSubmit(handleWhatsAppSubmit)}

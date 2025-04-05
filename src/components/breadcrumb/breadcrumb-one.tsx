@@ -39,7 +39,7 @@ const BreadcrumbOne = ({
                   <span className="bg-white rounded">{title}</span>
                 </h1>
               </div>
-              <div className="col-xl-4 col-lg-5 ms-auto">
+              <div className="col-xl-5 col-lg-5 ms-auto">
                 <p className="text-white text-lg mb-70 lg-mb-40">{subtitle}</p>
                 <ul className="style-none d-inline-flex pager">
                   <li>
