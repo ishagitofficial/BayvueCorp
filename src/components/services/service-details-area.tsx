@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 // internal
@@ -65,6 +66,21 @@ const imgStyle = {
   height: "auto",
 };
 const ServiceDetailsArea = ({ service }: any) => {
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 450 && window.scrollY < 1500) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="service-details mt-100 lg-mt-80 mb-100 lg-mb-80">
       <div className="container">
@@ -82,7 +98,7 @@ const ServiceDetailsArea = ({ service }: any) => {
             })}
           </div>
           <div className="col-xxl-3 col-lg-4 order-lg-first">
-            <aside className="md-mt-40">
+            <aside className={`md-mt-40 ${isFixed ? "fixed-sidebar" : ""}`}>
               <div className="service-nav-item">
                 <ul className="style-none">
                   {service?.details?.map((x: any, index: any) => {

@@ -89,11 +89,13 @@ const imgStyle = {
 const TextFeatureEight = ({ style_2 = false }: { style_2?: boolean }) => {
   return (
     <div className="text-feature-eight mt-60 mb-100 lg-mt-60">
-      <div className="container">
+      <div className="container" style={{ maxWidth: 1250 }}>
         <div className="row">
           <div className="col-xl-5 col-lg-6 wow fadeInLeft">
             <div className="title-one mt-20">
-              <div className="upper-title">Why Choose Us</div>
+              <div className="upper-title">
+                <h2 className="color-deep">Why Choose Us?</h2>
+              </div>
               <h3 className="color-deep">
                 Elite Talent & Business Excellence Solutions
               </h3>
@@ -103,7 +105,8 @@ const TextFeatureEight = ({ style_2 = false }: { style_2?: boolean }) => {
               <p className="mb-35">
                 Partner with us for strategic recruitment and operational
                 excellence. We combine industry expertise, advanced technology,
-                and proven methodologies to deliver exceptional results.
+                and proven methodologies to deliver exceptional results in both
+                talent acquisition and project management.
               </p>
               <ul className="list-style-one">
                 <li>Top Talent, Faster - Streamlined recruitment process</li>
@@ -114,6 +117,16 @@ const TextFeatureEight = ({ style_2 = false }: { style_2?: boolean }) => {
                 </li>
                 <li>Global Reach - Access to worldwide talent pool</li>
                 <li>Data-Driven Approach - AI-powered recruitment tools</li>
+                {/* Business Excellence */}
+                <li>
+                  PMO Excellence - Structured project governance & delivery
+                </li>
+                <li>Process Optimization - Enhanced operational efficiency</li>
+                <li>Risk Management - Proactive project risk mitigation</li>
+                <li>
+                  Data-Driven Approach - AI-powered solutions for both
+                  recruitment & PMO
+                </li>
               </ul>
               <div className="mt-35">
                 <Link href="/contact" className="btn-four">

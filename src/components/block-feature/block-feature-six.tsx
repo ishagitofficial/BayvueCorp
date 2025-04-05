@@ -60,7 +60,7 @@ const BlockFeatureSix = ({ style_2 = false }: { style_2?: boolean }) => {
 
       {/* {style_2 &&  */}
       <div className="block-feature-six bg-two position-relative pt-100 lg-pt-60 pb-120 lg-pb-40">
-        <div className="container">
+        <div className="container" style={{ maxWidth: 1250 }}>
           <div className="row gx-lg-5">
             <div className="col-lg-4 wow fadeInLeft">
               <div className="title-one">
