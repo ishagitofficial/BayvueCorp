@@ -30,31 +30,10 @@ function AddressBlock({
 
 const ContactArea = () => {
   return (
-    <div className="contact-us-section pt-150 lg-pt-80">
+    <div className="contact-us-section pt-40 lg-pt-40">
       <div className="container">
         <div className="position-relative">
-          <div className="row">
-            <div className="col-12 m-auto">
-              <div className="row">
-                <div className="col-md-6">
-                  <AddressBlock
-                    icon={icon_1}
-                    title="Our Address"
-                    subtitle="Thane, <br/>Mumbai, India"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <AddressBlock
-                    icon={icon_2}
-                    title="Contact Info"
-                    subtitle='Open a chat or give us call at <br/><a href="tel:800-800-8000" className="call text-lg fw-500">+91-800-800-8000</a>'
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-wrapper light-bg mt-80 lg-mt-40">
+          <div className="bg-wrapper light-bg mt-20 lg-mt-20 mb-80">
             <div className="row">
               <div className="col-lg-5">
                 <div className="d-flex flex-column flex-lg-column-reverse">
@@ -77,6 +56,33 @@ const ContactArea = () => {
                   {/* form start */}
                   <ContactForm />
                   {/* form end */}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12 m-auto">
+              <div className="row">
+                <div className="col-md-4">
+                  <AddressBlock
+                    icon={icon_2}
+                    title="Contact Info"
+                    subtitle='Open a chat or give us call at <br/><a href="tel:800-800-8000" className="call text-lg fw-500">+91-800-800-8000</a>'
+                  />
+                </div>
+                <div className="col-md-4">
+                  <AddressBlock
+                    icon={icon_1}
+                    title="Our Address"
+                    subtitle="Thane, <br/>Mumbai, India"
+                  />
+                </div>
+                <div className="col-md-4">
+                  <AddressBlock
+                    icon={icon_3} // Using the already imported icon_3
+                    title="Email Us"
+                    subtitle='Send us an email at<br/><a href="mailto:info@bayvuecorp.com" className="call text-lg fw-500">info@bayvuecorp.com</a>'
+                  />
                 </div>
               </div>
             </div>

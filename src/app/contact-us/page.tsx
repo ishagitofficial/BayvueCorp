@@ -26,7 +26,6 @@ const ContactPage = () => {
       {/* contact area end */}
 
       {/* news letter start */}
-      <NewsletterBanner />
       {/* news letter end */}
     </main>
   );
