@@ -48,20 +48,27 @@ const BlockFeatureTwo = () => {
 
             <div className="col-md-4">
               <div className=" sm-pb-30 sm-pt-30">
-                <h4 className="fw-bold mt-40 sm-mt-20 mb-20">{"About Us"}</h4>
-                <p
-                  className="fw-medium"
-                  style={{ fontWeight: "400 !important" }}
+                <div
+                  className={`card-style-three pt-45 md-pt-30 pb-35 sm-pb-30`}
                 >
-                  At Bayvue Corp, we specialize in finding, attracting, and
-                  securing the right talent to fuel your business success. Our
-                  strategic recruitment solutions ensure that companies get
-                  access to top-tier professionals efficiently and
-                  cost-effectively. Whether you need IT specialists, healthcare
-                  professionals, financial experts, or executive leaders, our
-                  expert-driven approach delivers the best-fit candidates for
-                  your organization.
-                </p>
+                  <Image src={icon_2} alt="icon" className="lazy-img icon" />
+                  <h4 className="fw-bold mt-40 sm-mt-20 mb-20">{"About Us"}</h4>
+                  <p
+                    style={{
+                      fontWeight: "normal !important",
+                      color: "rgba(0, 0, 0, 0.7)",
+                    }}
+                  >
+                    At Bayvue Corp, we specialize in finding, attracting, and
+                    securing the right talent to fuel your business success. Our
+                    strategic recruitment solutions ensure that companies get
+                    access to top-tier professionals efficiently and
+                    cost-effectively. Whether you need IT specialists,
+                    healthcare professionals, financial experts, or executive
+                    leaders, our expert-driven approach delivers the best-fit
+                    candidates for your organization.
+                  </p>
+                </div>
               </div>
             </div>
             {/* <div className="col-md-4">
