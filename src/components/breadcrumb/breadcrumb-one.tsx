@@ -20,7 +20,7 @@ const BreadcrumbOne = ({
   bg_img = bg,
   page,
   cls = "",
-  style_2 = false,
+  style_2 = true,
   shape,
 }: IProps) => {
   return (
