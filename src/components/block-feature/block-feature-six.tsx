@@ -64,11 +64,11 @@ const BlockFeatureSix = ({ style_2 = false }: { style_2?: boolean }) => {
           <div className="row gx-lg-5">
             <div className="col-lg-4 wow fadeInLeft">
               <div className="title-one">
-                <h2>Our Services.</h2>
+                <h2>Our Core Services.</h2>
               </div>
               <p className="text-lg text-dark mt-40 md-mt-20 mb-35 md-mb-30">
-                Marketing agency with top talented people are providing quality
-                services.
+                Empowering businesses with expert-driven hiring solutions and
+                project management excellence for sustainable growth.
               </p>
               <Link
                 href="/contact"
