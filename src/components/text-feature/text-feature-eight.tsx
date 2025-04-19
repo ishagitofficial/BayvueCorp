@@ -103,29 +103,33 @@ const TextFeatureEight = ({ style_2 = false }: { style_2?: boolean }) => {
 
             <div className="text-lg mt-45 lg-mt-30">
               <p className="mb-35">
-                Partner with us for strategic recruitment and operational
-                excellence. We combine industry expertise, advanced technology,
-                and proven methodologies to deliver exceptional results in both
-                talent acquisition and project management.
+                Partner with us to achieve strategic recruitment and operational
+                excellence. Leveraging deep industry knowledge, cutting-edge
+                technology, and proven methodologies, we deliver outstanding
+                results in both talent acquisition and project management.
               </p>
               <ul className="list-style-one">
-                <li>Top Talent, Faster - Streamlined recruitment process</li>
-                <li>Cost-Effective Solutions - High ROI on your investment</li>
                 <li>
-                  Industry-Specific Expertise - Tailored solutions for your
-                  domain
+                  Accelerated Access to Top Talent — Streamlined recruitment
+                  processes
                 </li>
-                <li>Global Reach - Access to worldwide talent pool</li>
-                <li>Data-Driven Approach - AI-powered recruitment tools</li>
-                {/* Business Excellence */}
                 <li>
-                  PMO Excellence - Structured project governance & delivery
+                  Cost-Effective Solutions — Maximize ROI on your investment
                 </li>
-                <li>Process Optimization - Enhanced operational efficiency</li>
-                <li>Risk Management - Proactive project risk mitigation</li>
                 <li>
-                  Data-Driven Approach - AI-powered solutions for both
-                  recruitment & PMO
+                  Industry-Specific Expertise — Tailored solutions for your
+                  sector
+                </li>
+                <li>Global Reach — Access to a worldwide talent pool</li>
+                <li>Data-Driven Approach — AI-powered recruitment tools</li>
+                <li>
+                  PMO Excellence — Structured project governance and delivery
+                </li>
+                <li>Process Optimization — Enhanced operational efficiency</li>
+                <li>Risk Management — Proactive mitigation of project risks</li>
+                <li>
+                  Data-Driven Insights — AI-powered solutions for recruitment
+                  and PMO success
                 </li>
               </ul>
               <div className="mt-35">
