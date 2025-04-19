@@ -54,7 +54,7 @@ const ContactForm = () => {
 
   // WhatsApp handling function
   const handleWhatsAppSubmit = (data: FormData) => {
-    const phoneNumber = "+919561828767"; // Add your WhatsApp business number
+    const phoneNumber = "+919930975755"; // Add your WhatsApp business number
     const message = encodeURIComponent(`
       Name: ${data.name}
       Email: ${data.email}
