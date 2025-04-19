@@ -81,7 +81,7 @@ const ContactArea = () => {
                   <AddressBlock
                     icon={icon_3} // Using the already imported icon_3
                     title="Email Us"
-                    subtitle='Send us an email at<br/><a href="mailto:info@bayvuecorp.com" className="call text-lg fw-500">info@bayvuecorp.com</a>'
+                    subtitle='Send us an email at<br/><a href="mailto:contactus@bayvuecorp.com" className="call text-lg fw-500">contactus@bayvuecorp.com</a>'
                   />
                 </div>
               </div>

@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
+
+// import logo from "@/assets/logo/bayvue.svg";
 import logo from "@/assets/images/logo/logo.svg";
 import icon from "@/assets/images/icon/icon_94.svg";
 import LoginModal from "@/components/common/login-modal";
@@ -35,7 +37,18 @@ const HeaderSix = () => {
             <div className="d-flex align-items-center justify-content-between">
               <div className="logo order-lg-0">
                 <Link href="/" className="d-flex align-items-center">
-                  <Image src={logo} alt="logo" />
+                  <Image
+                    src={logo}
+                    alt="logo"
+                    // style={{
+                    //   color: "transparent",
+                    //   height: 140,
+                    //   position: "absolute",
+                    //   top: -5,
+                    //   background: "white",
+                    //   borderRadius: 10,
+                    // }}
+                  />
                 </Link>
               </div>
 
