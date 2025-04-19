@@ -1,0 +1,38 @@
+<svg viewBox="20 20 160 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Integrated B and C logo with text -->
+  <g transform="translate(20, 20)">
+    <!-- C shape with clear opening -->
+    <path d="M125,30 A65,65 0 1,0 125,120 L115,120 A55,55 0 1,1 115,30 Z" 
+          fill="#D4AF37"/>
+    
+    <!-- B shape integrated with the C -->
+    <path d="M25,30 L25,120 L65,120 C85,120 95,105 95,90 C95,78 88,68 75,65 C85,62 90,52 90,42 C90,25 80,30 65,30 Z" 
+          fill="#044F3B"/>
+    
+    <!-- Inner cutouts of B -->
+    <path d="M40,45 L40,70 L60,70 C70,70 75,65 75,57.5 C75,50 70,45 60,45 Z" fill="white"/>
+    <path d="M40,80 L40,105 L60,105 C70,105 75,100 75,92.5 C75,85 70,80 60,80 Z" fill="white"/>
+    
+    <!-- Small wave element suggesting the "vue" -->
+    <path d="M100,60 Q115,50 125,60 Q135,70 145,60" 
+          stroke="#D4AF37" 
+          stroke-width="6" 
+          fill="none" 
+          stroke-linecap="round"/>
+    
+    <!-- Text elements - "ayvue" and "Corp" in 2 lines, positioned below the wave -->
+    <text x="118" y="80" 
+          font-family="Arial, sans-serif" 
+          font-size="14"
+          font-weight="bold"
+          text-anchor="middle" 
+          fill="#044F3B">ayvue</text>
+    
+    <text x="110" y="98" 
+          font-family="Arial, sans-serif" 
+          font-size="14"
+          font-weight="bold"
+          text-anchor="middle" 
+          fill="#D4AF37">orp</text>
+  </g>
+</svg>

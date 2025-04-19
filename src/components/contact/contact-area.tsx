@@ -67,7 +67,7 @@ const ContactArea = () => {
                   <AddressBlock
                     icon={icon_2}
                     title="Contact Info"
-                    subtitle='Open a chat or give us call at <br/><a href="tel:800-800-8000" className="call text-lg fw-500">+91-800-800-8000</a>'
+                    subtitle='Open a chat or give us call at <br/><a href="tel:99309-75755" className="call text-lg fw-500">+91-99309-75755</a>'
                   />
                 </div>
                 <div className="col-md-4">
@@ -81,7 +81,7 @@ const ContactArea = () => {
                   <AddressBlock
                     icon={icon_3} // Using the already imported icon_3
                     title="Email Us"
-                    subtitle='Send us an email at<br/><a href="mailto:info@bayvuecorp.com" className="call text-lg fw-500">info@bayvuecorp.com</a>'
+                    subtitle='Send us an email at<br/><a href="mailto:contactus@bayvuecorp.com" className="call text-lg fw-500">contactus@bayvuecorp.com</a>'
                   />
                 </div>
               </div>

@@ -30,7 +30,7 @@ const FooterThree = ({ style_2 }: { style_2?: boolean }) => {
                   Licensed in 50 states.
                 </p>
                 <p className="m0">
-                  <Link href="#">+91-800-800-8000</Link>
+                  <Link href="#">+91-99309-75755</Link>
                 </p>
               </div>
             </div>

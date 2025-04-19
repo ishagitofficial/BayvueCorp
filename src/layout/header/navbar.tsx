@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 // internal
-import logo from "@/assets/images/logo/logo.svg";
+import logo from "@/assets/logo/bayvue.svg";
 import menu_data from "@/data/menu-data";
 import { usePathname } from "next/navigation";
 
@@ -14,7 +14,18 @@ const Navbar = () => {
       <li className="d-block d-lg-none">
         <div className="logo">
           <Link href="/" className="d-block">
-            <Image src={logo} alt="logo" />
+            <Image
+              src={logo}
+              alt="logo"
+              style={{
+                color: "transparent",
+                height: 140,
+                position: "absolute",
+                top: -20,
+                background: "white",
+                borderRadius: 10,
+              }}
+            />
           </Link>
         </div>
       </li>
