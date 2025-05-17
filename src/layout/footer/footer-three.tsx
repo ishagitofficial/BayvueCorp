@@ -57,7 +57,7 @@ const FooterThree = ({ style_2 }: { style_2?: boolean }) => {
                   <Link href="/blogs">Blogs</Link>
                 </li>
                 <li>
-                  <Link href="/faqs">FAQ’s</Link>
+                  <Link href="/faq">FAQ’s</Link>
                 </li>
                 <li>
                   <Link href="/contact-us">Contact</Link>
@@ -74,10 +74,10 @@ const FooterThree = ({ style_2 }: { style_2?: boolean }) => {
                   <Link href="#">Terms & conditions</Link>
                 </li>
                 <li>
-                  <Link href="#">Privacy</Link>
+                  <Link href="/privacy-policy">Privacy</Link>
                 </li>
                 <li>
-                  <Link href="#">Cookie policy</Link>
+                  <Link href="/cookie-policy">Cookie policy</Link>
                 </li>
               </ul>
             </div>
@@ -107,13 +107,13 @@ const FooterThree = ({ style_2 }: { style_2?: boolean }) => {
             <div className="col-xl-4 col-lg-6 order-lg-2 mb-15">
               <ul className="style-none bottom-nav d-flex justify-content-center order-lg-last">
                 <li>
-                  <Link href="#">Privacy & Terms</Link>
+                  <Link href="/privacy-policy">Privacy</Link>
                 </li>
                 <li>
-                  <Link href="#">Cookies</Link>
+                  <Link href="/cookie-policy">Cookie policy</Link>
                 </li>
                 <li>
-                  <Link href="#">Contact Us</Link>
+                  <Link href="/contact-us">Contact Us</Link>
                 </li>
               </ul>
             </div>

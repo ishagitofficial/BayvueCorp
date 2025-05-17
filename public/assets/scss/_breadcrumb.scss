@@ -1,0 +1,55 @@
+// public/assets/scss/_breadcrumb.scss
+.breadcrumb-area {
+  position: relative;
+  z-index: 1;
+  background-color: var(--bg-two);
+
+  .page-title {
+    font-size: 42px;
+    color: var(--heading);
+    margin-bottom: 15px;
+  }
+
+  .page-breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      position: relative;
+      color: var(--text-dark);
+      font-size: 18px;
+
+      &:not(:last-child)::after {
+        content: "/";
+        margin-left: 10px;
+        color: var(--text-dark);
+      }
+
+      a {
+        color: var(--text-dark);
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .breadcrumb-area {
+    .page-title {
+      font-size: 32px;
+    }
+
+    .page-breadcrumb li {
+      font-size: 16px;
+    }
+  }
+}
