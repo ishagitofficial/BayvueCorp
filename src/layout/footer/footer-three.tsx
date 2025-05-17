@@ -27,7 +27,6 @@ const FooterThree = ({ style_2 }: { style_2?: boolean }) => {
                 </div>
                 <p className="lh-sm mb-45 lg-mb-30">
                   Thane, Mumbai, India, <br />
-                  Licensed in 50 states.
                 </p>
                 <p className="m0">
                   <Link href="#">+91-99309-75755</Link>
