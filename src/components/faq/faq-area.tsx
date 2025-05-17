@@ -1,74 +1,75 @@
-import React from 'react';
-import Link from 'next/link';
-import FaqItem from './faq-item';
+import React from "react";
+import FaqItem from "./faq-item";
+
+const faq_data = [
+  {
+    id: "one",
+    title: "Full-Cycle Recruitment",
+    desc: "We manage the entire hiring process, from sourcing and screening to candidate selection, ensuring you get the right talent with the right skills while reducing time-to-hire and hiring costs.",
+    isShow: true,
+  },
+  {
+    id: "two",
+    title: "Contract and Permanent Staffing",
+    desc: "Whether you need temporary, contract, or full-time employees, we offer flexible staffing solutions that align with your business needs, providing agile workforce solutions to support project demands and long-term growth.",
+  },
+  {
+    id: "three",
+    title: "Executive Search and Leadership Hiring",
+    desc: "Finding C-suite executives and leadership talent requires a specialized approach. We leverage industry expertise, market intelligence, and a deep talent network to recruit high-impact leaders who drive business success.",
+  },
+  {
+    id: "four",
+    title: "Industry-Specific Talent Solutions",
+    desc: "We specialize in recruitment across IT, healthcare, finance, automotive, and other domains, ensuring you get highly skilled professionals tailored to your industry's unique requirements.",
+  },
+  {
+    id: "five",
+    title: "Global Talent Access",
+    desc: "Expand your workforce beyond local talent pools. We help businesses access global talent by managing cross-border hiring, compliance, and remote workforce integration.",
+  },
+  {
+    id: "six",
+    title: "Project Management Excellence",
+    desc: "Our structured PMO frameworks and governance models ensure efficient project delivery, risk management, and optimal resource utilization.",
+  },
+  {
+    id: "seven",
+    title: "Cost-Effective Solutions",
+    desc: "Our services provide high-quality talent and project management at a fraction of traditional costs, eliminating overhead and reducing operational expenses.",
+  },
+  {
+    id: "eight",
+    title: "Data-Driven Approach",
+    desc: "We leverage AI-powered tools and data analytics to make informed decisions in both recruitment and project management processes.",
+  },
+  {
+    id: "nine",
+    title: "Scalable Solutions",
+    desc: "Our flexible engagement models allow you to scale your workforce and project management capabilities according to business demands.",
+  },
+  {
+    id: "ten",
+    title: "End-to-End Support",
+    desc: "From initial consultation to ongoing support, we provide comprehensive solutions that drive sustainable business growth and operational excellence.",
+  },
+];
 
 const FaqArea = () => {
   return (
     <div className="faq-section-three light-bg border-top pt-120 lg-pt-80 pb-150 lg-pb-80">
       <div className="container">
-        <nav>
-          <div className="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            <button className="nav-link active" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-selected="true" tabIndex={-1}>All</button>
-            <button className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-marketing" type="button" role="tab" aria-selected="false" tabIndex={-1}>Marketing</button>
-            <button className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-banking" type="button" role="tab" aria-selected="false" tabIndex={-1}>Banking</button>
-            <button className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-finance" type="button" role="tab" aria-selected="false" tabIndex={-1}>Finance</button>
-            <button className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-payment" type="button" role="tab" aria-selected="false" tabIndex={-1}>Payments</button>
-            <button className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-terms" type="button" role="tab" aria-selected="false" tabIndex={-1}>Terms & Conditions</button>
-            <button className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-account" type="button" role="tab" aria-selected="false" tabIndex={-1}>Account</button>
-          </div>
-        </nav>
-        <div className="tab-content mt-60 lg-mt-40">
-          <div className="tab-pane fade show active" id="nav-all" role="tabpanel" tabIndex={0}>
-            <div className="accordion accordion-style-one" id="accordionOne">
-              <FaqItem id='one' title='How does the free trial work?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionOne' />
-              <FaqItem isShow={true} id='two' title='How do you find different criteria in your process?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionOne' />
-              <FaqItem id='three' title='What do you look for in a founding team?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionOne' />
-              <FaqItem id='four' title='Do you recommend Pay as you go or Pre pay?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionOne' />
-              <FaqItem id='five' title='What do I get for $0 with my plan?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionOne' />
-              <FaqItem id='six' title='What do you look for in a founding team?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionOne' />
+        <div className="row justify-content-center">
+          <div className="col-lg-12">
+            <div
+              className="accordion accordion-style-one px-4 bg-white"
+              id="accordionOne"
+            >
+              {faq_data.map((faq, i) => (
+                <FaqItem key={i} {...faq} parent="accordionOne" cls="fw-bold" />
+              ))}
             </div>
           </div>
-          <div className="tab-pane fade" id="nav-marketing" role="tabpanel" tabIndex={0}>
-            <div className="accordion accordion-style-one" id="accordionTwo">
-              <FaqItem id='seven' title='How does the free trial work?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionTwo' />
-              <FaqItem id='eight' title='How do you find different criteria in your process?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionTwo' />
-            </div>
-          </div>
-          <div className="tab-pane fade" id="nav-banking" role="tabpanel" tabIndex={0}>
-            <div className="accordion accordion-style-one" id="accordionThree">
-              <FaqItem id='nine' title='How does the free trial work?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionThree' />
-              <FaqItem id='ten' title='How do you find different criteria in your process?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionThree' />
-            </div>
-          </div>
-          <div className="tab-pane fade" id="nav-finance" role="tabpanel" tabIndex={0}>
-            <div className="accordion accordion-style-one" id="accordionFour">
-              <FaqItem id='eleven' title='How does the free trial work?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionFour' />
-              <FaqItem id='twelve' title='How do you find different criteria in your process?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionFour' />
-            </div>
-          </div>
-          <div className="tab-pane fade" id="nav-payment" role="tabpanel" tabIndex={0}>
-            <div className="accordion accordion-style-one" id="accordionFive">
-              <FaqItem id='thirteen' title='How does the free trial work?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionFive' />
-              <FaqItem id='fourteen' title='How do you find different criteria in your process?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionFive' />
-            </div>
-          </div>
-          <div className="tab-pane fade" id="nav-terms" role="tabpanel" tabIndex={0}>
-            <div className="accordion accordion-style-one" id="accordionSix">
-              <FaqItem id='fifteen' title='How does the free trial work?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionSix' />
-              <FaqItem id='sixteen' title='How do you find different criteria in your process?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionSix' />
-            </div>
-          </div>
-          <div className="tab-pane fade" id="nav-account" role="tabpanel" tabIndex={0}>
-            <div className="accordion accordion-style-one" id="accordionSeven">
-              <FaqItem id='seventeen' title='How does the free trial work?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionSeven' />
-              <FaqItem id='eighteen' title='How do you find different criteria in your process?' desc='Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' parent='accordionSeven' />
-            </div>
-          </div>
-        </div>
-
-        <div className="text-center mt-60 lg-mt-50">
-          <h2 className="fs-1 mb-30">Don’t get your answer?</h2>
-          <Link href="/contact" className="btn-four">Contact Us</Link>
         </div>
       </div>
     </div>
