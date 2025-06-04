@@ -2,7 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import logo from "@/assets/images/logo/logo.svg";
+// import logo from "@/assets/images/logo/logo.svg";
+import logo from "@/assets/logo/bayvue.png";
+
 import shape_1 from "@/assets/images/shape/shape_36.svg";
 import shape_2 from "@/assets/images/shape/shape_37.svg";
 import shape_3 from "@/assets/images/shape/shape_39.svg";
@@ -22,7 +24,15 @@ const FooterThree = ({ style_2 }: { style_2?: boolean }) => {
               >
                 <div className="logo mb-15">
                   <Link href="/">
-                    <Image width={200} src={logo} alt="logo" />
+                    <Image
+                      src={logo}
+                      alt="logo"
+                      style={{
+                        color: "transparent",
+                        height: 100,
+                        width: 100,
+                      }}
+                    />
                   </Link>
                 </div>
                 <p className="lh-sm mb-45 lg-mb-30">
